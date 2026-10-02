@@ -14,6 +14,7 @@ class Vector2:
             return Vector2(self.x + other.x, self.y + other.y)
         if isinstance(other, int) or isinstance(other, float):
             return Vector2(self.x + other, self.y + other)
+        raise Exception("[Vector2] Impossible SUM operation")
         
 
     def __sub__(self, other):
@@ -21,6 +22,7 @@ class Vector2:
             return Vector2(self.x - other.x, self.y - other.y)
         if isinstance(other, int) or isinstance(other, float):
             return Vector2(self.x - other, self.y - other)
+        raise Exception("[Vector2] Impossible SUB operation")
         
 
     def __mul__(self, other):
@@ -28,6 +30,7 @@ class Vector2:
             return Vector2(self.x * other.x, self.y * other.y)
         if isinstance(other, int) or isinstance(other, float):
             return Vector2(self.x * other, self.y * other)
+        raise Exception("[Vector2] Impossible MUL operation")
         
 
     def __pow__(self, other):
@@ -35,6 +38,7 @@ class Vector2:
             return Vector2(self.x ** other.x, self.y ** other.y)
         if isinstance(other, int) or isinstance(other, float):
             return Vector2(self.x ** other, self.y ** other)
+        raise Exception("[Vector2] Impossible POW operation")
         
 
     def __abs__(self):

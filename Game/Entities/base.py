@@ -32,6 +32,7 @@ class BaseEntity:
 
     def sumPosition(self, position : Vector2):
         self.data["position"] = self.data['position'] + position
+        
             
     def getPosition(self):
         return self.data["position"]
